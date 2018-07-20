@@ -1,0 +1,63 @@
+package sk.elct.project.todolist;
+
+import java.time.LocalDateTime;
+
+public class Activity {
+
+	private Long id;
+	private String title;
+	private int priority;
+	private LocalDateTime dueDate;
+	private String body;
+	private Integer progress;
+	private Category category;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public int getPriority() {
+		return priority;
+	}
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+	public LocalDateTime getDueDate() {
+		return dueDate;
+	}
+	public void setDueDate(LocalDateTime dueDate) {
+		this.dueDate = dueDate;
+	}
+	public String getBody() {
+		return body;
+	}
+	public void setBody(String body) {
+		this.body = body;
+	}
+	public Integer getProgress() {
+		return progress;
+	}
+	public void setProgress(Integer progress) {
+		this.progress = progress;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	@Override
+	public String toString() {
+		return "Activity [id=" + id + ", title=" + title + ", priority=" + priority + ", dueDate=" + dueDate + ", body="
+				+ body + ", progress=" + progress + ", category=" + category + "]";
+	}
+		
+}
